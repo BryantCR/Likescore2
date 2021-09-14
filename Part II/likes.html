@@ -1,96 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
         <title>
-            Likes part II
+            Likes
         </title>
+        <meta charset="UTF-8">
         <link rel="stylesheet" href="./css/styles.css">
     </head>
+
     <body>
-        <header>
-            <nav class="holdnavbar">
-                <nav class="navbar">
-                    <h1 class="navtittle">
-                        Network
-                    </h1>
-                </nav>
-            </nav>
-        </header>
-        <h1 class="yourFeed">
-            Your Feed
-        </h1>
-        <main>
-            <div class="holdbodyright">
-                <div class="block1">
-                    <div class="ninjacolumn1">
-                        <div>
-                        <img id="profilepicture" src="./user-circle.png" alt="Profile icon">
+        <div class="topBar">
+            <h1>Network</h1>
+        </div>
+        <p class="feed">Your feed</p>
+        <div class="container">
+            <div class="leftColumn">
+                <img src="./../user-circle.png" alt="user picture" class="profilePic">
+                <a href="#">Add an avatar</a>
+                <p class="name">James Doe</p>
+            </div>
+            
+            <div class="rightColumn">
+                <div class="userInfo">
+                    <div class="upperInfo">
+                        <h2 class="userName">Neil M</h1>    
+                        <div class="topRightSide">
+                            <p><span class="likesValue1">1</span> like(s)</p>
+                        <button class="likes" onclick="changeValue1()">Like</button>
                         </div>
-                        <a href="#">Add an avatar</a>
-                        <h2>
-                            James Doe
-                        </h2>
+                    </div>
+                    <div>
+                        <p class="post">I just set up this new discord bot, let me know what do you all think. <a href="#">link</a></p>
+                    </div>
+                </div>
+                <div class="userInfo">
+                    <div class="upperInfo">
+                        <h2 class="userName">Nichole K</h1>
+                        <div class="topRightSide">
+                            <p><span class="likesValue2">1</span> like(s)</p>
+                            <button class="likes" onclick="changeValue2()">Like</button>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="post">Just finished my <a href="#">next comic</a>, check it out.</p>
+                    </div>
+                </div>
+                <div class="userInfo">
+                    <div class="upperInfo">
+                        <h2 class="userName">Jim R</h1>
+                        <div class="topRightSide">
+                            <p><span class="likesValue3">1</span> like(s)</p>
+                            <button class="likes" onclick="changeValue3()">Like</button>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="post">I can't stop listening to the <a href="#">new album</a>.<br> Who else is liking it?</p>
                     </div>
                 </div>
             </div>
-            <div class="holdbodyleft">
-                <div class="block2">
-                    <div class="head">
-                        <h1 class="blocktittle">
-                            Neil M
-                        </h1>
-                        <p class="blockparagraph">
-                            <span class="increaseNum">1</span> like(s)
-                        </p>
-                        <button class="likeButton" onclick="increaselikes()">
-                            Like
-                        </button>
-                    </div>
-                    <div class="footer">
-                        <p class="description">
-                            I just set up this new discord bot, let me know what you all think <a href="#"></a>
-                        </p>
-                    </div>
-                </div>
-                <div class="block2">
-                    <div class="head">
-                        <h1 class="blocktittle">
-                            Neil M
-                        </h1>
-                        <p class="blockparagraph">
-                            <span class="increaseNum">1</span> like(s)
-                        </p>
-                        <button class="likeButton" onclick="increaselikes()">
-                            Like
-                        </button>
-                    </div>
-                    <div class="footer">
-                        <p class="description">
-                            I just set up this new discord bot, let me know what you all think <a href="#"></a>
-                        </p>
-                    </div>
-                </div>
-                <div class="block2">
-                    <div class="head">
-                        <h1 class="blocktittle">
-                            Neil M
-                        </h1>
-                        <p class="blockparagraph">
-                            <span class="increaseNum">1</span> like(s)
-                        </p>
-                        <button class="likeButton" onclick="increaselikes()">
-                            Like
-                        </button>
-                    </div>
-                    <div class="footer">
-                        <p class="description">
-                            I just set up this new discord bot, let me know what you all think <a href="#"></a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </main>
+        </div>
         <script src="./js/index.js"></script>
     </body>
 </html>
