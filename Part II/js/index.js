@@ -5,18 +5,25 @@ function changeValue1(){
     valueNum.innerHTML = plusValue;
 }
 
-function changeValue2(){
-    let valueNum = document.querySelector('.likesValue2');
-    let plusValue = parseInt(valueNum.innerHTML);
-    plusValue += 1;
-    valueNum.innerHTML = plusValue;
+function increaselikes1(){
+    let numLike = document.querySelector('.likesNumber1');
+    let increasedNum = parseInt(numLike.innerHTML);
+    increasedNum += 1;
+    numLike.innerHTML = increasedNum;
 }
 
-function changeValue3(){
-    let valueNum = document.querySelector('.likesValue3');
-    let plusValue = parseInt(valueNum.innerHTML);
-    plusValue += 1;
-    valueNum.innerHTML = plusValue;
+function increaselikes2(){
+    let numLike2 = document.querySelector('.likesNumber2');
+    let increasedNum2 = parseInt(numLike2.innerHTML);
+    increasedNum2 += 1;
+    numLike2.innerHTML = increasedNum2;
+}
+
+function increaselikes3(){
+    let numLike3 = document.querySelector('.likesNumber3');
+    let increasedNum3 = parseInt(numLike3.innerHTML);
+    increasedNum3 += 1;
+    numLike3.innerHTML = increasedNum3;
 }
 /*
 
